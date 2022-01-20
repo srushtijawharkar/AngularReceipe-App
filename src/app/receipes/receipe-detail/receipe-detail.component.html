@@ -1,10 +1,10 @@
 <p>receipe-detail works!</p>
 <div class="image-parent">
-    <img src="" class="img-fluid" alt="">
+    <img [src]="receipe.imagepath" class="img-fluid" alt="receipe.name">
 </div>
 <div class = "row">
     <div class = ".col-lg-12">
-    <h1>Receipe Name</h1>
+    <h1>{{receipe.name}}</h1>
     </div>
 </div><br>
 <!-- Example single danger button -->
@@ -13,11 +13,27 @@
       Dropdown button
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" href="#">To shopping list</a></li>
+      <li><a class="dropdown-item" href="#">Edit Recepe</a></li>
+      <li><a class="dropdown-item" href="#">Delete Receipe</a></li>
     </ul>
   </div>
+  <div class="row">
+
+    <div class="col-xs-12">
+      {{receipe.description}}
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-xs-12">
+     Ingredients
+    </div>
+
+  </div>
+
 <!----div class="dropdown">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
       Shopping List

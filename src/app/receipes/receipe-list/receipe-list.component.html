@@ -4,19 +4,17 @@
     </div>
 </div><br>
 
-<ol class="list-group list-group-numbered">
-    <li class="list-group-item d-flex justify-content-between align-items-start" *ngFor = "let receipe of receipes" >
-      <div class="ms-2 me-auto">
-        <div class="fw-bold">{{receipe.name}}</div>
-        {{receipe.description}}
-      </div>
-      <div class="image-parent">
-        <img src="{{receipe.imagepath}}" class="img-fluid" alt="{{receipe.name}}">
-    </div>
-    </li>
-  </ol>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name </label>
+    <input type="text" class="form-control" id="Name" aria-describedby="Name" placeholder="Enter Name"><hr>
+    
+  </div>
+  <button type="button" class="btn btn-primary">Primary</button>&nbsp;
+  <button type="button" class="btn btn-success">Success</button>&nbsp;
+  <button type="button" class="btn btn-danger">Danger</button>&nbsp;
 
 
-
-<app-receipe-item></app-receipe-item>
+<app-receipe-item *ngFor = "let receipeEl of receipes" [receipe] = "receipeEl"
+[receipeSelected] = "onReceipeSelected(receipeEl)"></app-receipe-item>
 

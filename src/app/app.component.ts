@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  loadedfeature = 'receipe';
+  onNavigate(feature:string)
+  {
+    this.loadedfeature = feature;
+  }
 }

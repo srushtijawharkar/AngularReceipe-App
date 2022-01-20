@@ -1,1 +1,13 @@
-<p>receipe-item works!</p>
+<a href = "#" class="list-group-item clearfix" (click)="onselected()">
+<ol class="list-group list-group-numbered">
+    <li class="list-group-item d-flex justify-content-between align-items-start" >
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">{{receipe.name}}</div>
+        {{receipe.description}}
+      </div>
+      <div class="image-parent">
+        <img src="{{receipe.imagepath}}" class="img-fluid" alt="{{receipe.name}}">
+    </div>
+    </li>
+  </ol>
+</a>
