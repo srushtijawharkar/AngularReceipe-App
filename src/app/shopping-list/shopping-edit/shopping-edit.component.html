@@ -1,8 +1,17 @@
-<div class="row">
-    <div class ="col-md-10">
-        <app-shopping-edit></app-shopping-edit>
-                 
-    </div>
-   
 
+<div class="form-group">
+    <label for="exampleInputEmail1">Name </label>
+    <input type="text" class="form-control" #nameinput id="Name" aria-describedby="Name" placeholder="Enter Name"><hr>
+    
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Amount </label>
+    <input type="number" class="form-control" #amountinput id="amount" aria-describedby="amount" placeholder="Enter amount"><hr>
+    
 </div>
+  <button type="button" class="btn btn-primary">Clear</button>&nbsp;
+  <button type="button" class="btn btn-success" (click)= "addItem()">Add</button>&nbsp;
+  <button type="button" class="btn btn-danger">Delete</button>&nbsp;
+
+
+   
