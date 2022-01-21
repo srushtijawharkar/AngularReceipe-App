@@ -13,7 +13,7 @@ export class ReceipeItemComponent implements OnInit {
   
  constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
   onSelected()
   {

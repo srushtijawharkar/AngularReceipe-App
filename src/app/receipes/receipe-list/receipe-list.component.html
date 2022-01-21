@@ -1,11 +1,11 @@
 <div class = "row">
     <div class = ".col-lg-12">
-    <button type="button" class="btn btn-primary">Large button</button>
+    <button type="button" class="btn btn-primary">Add New Receipe</button>
     </div>
 </div><br>
 
 
-  <div class="form-group">
+  <!--<div class="form-group">
     <label for="exampleInputEmail1">Name </label>
     <input type="text" class="form-control" id="Name" aria-describedby="Name" placeholder="Enter Name"><hr>
     
@@ -15,6 +15,10 @@
   <button type="button" class="btn btn-danger">Danger</button>&nbsp;
 
 
-<app-receipe-item *ngFor = "let receipeEl of receipes" [receipe] = "receipeEl"
-[receipeSelected] = "onReceipeSelected(receipeEl)"></app-receipe-item>
+<!---<app-receipe-item *ngFor = "let receipeEl of receipes" [receipe] = "receipeEl"
+(receipeSelected) = "onReceipeSelected(receipeEl)"></app-receipe-item>--->
 
+<app-receipe-item *ngFor="let receipeEl of receipes"
+ [receipe]="receipeEl"
+
+(receipeSelected)="onReceipeSelected(receipeEl)"></app-receipe-item>

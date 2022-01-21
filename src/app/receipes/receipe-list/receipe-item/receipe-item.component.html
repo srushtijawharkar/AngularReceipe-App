@@ -1,4 +1,4 @@
-<a href = "#" class="list-group-item clearfix" (click)="onselected()">
+<!---<a href = "#" class="list-group-item clearfix" (click)="onSelected()">
 <ol class="list-group list-group-numbered">
     <li class="list-group-item d-flex justify-content-between align-items-start" >
       <div class="ms-2 me-auto">
@@ -10,4 +10,18 @@
     </div>
     </li>
   </ol>
+</a>------>
+<a href="#" class="list-group-item clearfix" (click)="onSelected()">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ receipe.name }}</h4>
+    <p class="list-group-item-text">{{ receipe.description }}</p>
+  </div>
+  <span class="pull-right">
+    <img
+      src="{{ receipe.imagepath }}"
+      alt="{{ receipe.name }}"
+      class="responsive"
+      style="max-height: 50px;"
+    />
+  </span>
 </a>

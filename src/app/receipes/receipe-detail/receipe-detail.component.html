@@ -1,10 +1,10 @@
 <p>receipe-detail works!</p>
 <div class="image-parent">
-    <img [src]="receipe.imagepath" class="img-fluid" alt="receipe.name">
+    <img [src]="receipe.imagepath" class="img-fluid" alt="{{ receipe.name }}" class ="img-responsive" style = "max-height :300px">
 </div>
 <div class = "row">
     <div class = ".col-lg-12">
-    <h1>{{receipe.name}}</h1>
+    <h1>{{ receipe.name }}</h1>
     </div>
 </div><br>
 <!-- Example single danger button -->
@@ -21,7 +21,7 @@
   <div class="row">
 
     <div class="col-xs-12">
-      {{receipe.description}}
+      {{ receipe.description }}
     </div>
 
   </div>

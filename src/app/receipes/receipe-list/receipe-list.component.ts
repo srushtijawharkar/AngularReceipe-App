@@ -11,7 +11,7 @@ import  {Receipe} from '../receipe.model';
     @Output() receipewasSelected = new EventEmitter<Receipe>();
     receipes: Receipe[] = [
     new Receipe('Test Receipe','Simply Test','https://www.recipetineats.com/wp-content/uploads/2014/12/Party-Food-Recipes-Cover-Image.jpg'),
-    new Receipe('Test Receipe1','Simply Test123','https://www.recipetineats.com/wp-content/uploads/2014/12/Party-Food-Recipes-Cover-Image.jpg'),
+    new Receipe('Test Receipe1','Simply Test123','https://www.recipetineats.com/wp-content/uploads/2014/12/Party-Food-Recipes-Cover-Image.jpg')
 
     ];
     
@@ -19,7 +19,7 @@ import  {Receipe} from '../receipe.model';
 
       ngOnInit(){
       }
-      onReceipeSelected(receipe : Receipe)
+      onReceipeSelected(receipe: Receipe)
       {
           this.receipewasSelected.emit(receipe);
       }

@@ -7,7 +7,7 @@ import { Receipe } from './receipe.model';
   styleUrls: ['./receipes.component.css']
 })
 export class ReceipesComponent implements OnInit {
-selectedReceipe = Receipe;
+selectedReceipe: Receipe;
   constructor() { }
 
   ngOnInit(){
